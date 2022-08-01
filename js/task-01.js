@@ -1,9 +1,9 @@
 const item = document.querySelectorAll(".item");
-// console.log(item);
+
 console.log(`Number of categories: ${item.length}`);
 
 const itemArr = [...item];
-// console.log(itemArr);
+
 itemArr.map((item) => {
   console.log(`Category:${item.firstElementChild.textContent}`),
     console.log(`Elements:${item.lastElementChild.children.length}`);
