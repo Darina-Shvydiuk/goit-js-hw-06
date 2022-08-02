@@ -9,6 +9,11 @@ itemArr.map((item) => {
     console.log(`Elements:${item.lastElementChild.children.length}`);
 });
 
+// itemArr.forEach(
+//   (item) => console.log(`Category:${item.firstElementChild.textContent}`),
+//   console.log(`Elements:${item.lastElementChild.children.length}`)
+// );
+
 // const item = document.querySelector("#categories");
 // console.dir(item.childNodes);
 // const childs = [...item.children];

@@ -17,9 +17,9 @@ const linkUl = document.querySelector(".gallery");
 console.log(linkUl);
 
 const imageArr = images
-  .map(({ url, alt }) => `<li><img src="${url} " alt="${alt}"><li>`)
+  .map(({ url, alt }) => `<li><img src="${url}"alt="${alt}" width="280"></li>`)
   .join("");
 
 console.log(imageArr);
 
-linkUl.insertAdjacentHTML("afterend", imageArr);
+linkUl.insertAdjacentHTML("beforeend", imageArr);
