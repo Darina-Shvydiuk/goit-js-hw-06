@@ -1,19 +1,25 @@
-const item = document.querySelectorAll(".item");
-
-console.log(`Number of categories: ${item.length}`);
-
-const itemArr = [...item];
-
-itemArr.map((item) => {
+const itemUl = document.querySelector("#categories");
+const numberOfCategories = itemUl.children.length;
+console.log(`Number of categories: ${numberOfCategories}`);
+const itemEl = itemUl.children;
+[...itemEl].forEach((item) => {
   console.log(`Category:${item.firstElementChild.textContent}`),
     console.log(`Elements:${item.lastElementChild.children.length}`);
 });
 
-// itemArr.forEach(
-//   (item) => console.log(`Category:${item.firstElementChild.textContent}`),
-//   console.log(`Elements:${item.lastElementChild.children.length}`)
-// );
+// ВАріант через map
+// const item = document.querySelectorAll(".item");
 
+// console.log(`Number of categories: ${item.length}`);
+
+// const itemArr = [...item];
+
+// itemArr.map((item) => {
+//   console.log(`Category:${item.firstElementChild.textContent}`),
+//     console.log(`Elements:${item.lastElementChild.children.length}`);
+// });
+
+// Це для себе замітки;
 // const item = document.querySelector("#categories");
 // console.dir(item.childNodes);
 // const childs = [...item.children];
