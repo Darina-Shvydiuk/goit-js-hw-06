@@ -9,11 +9,12 @@ function handlerSubmitForm(event) {
   email = email.value;
   password = password.value;
   const object = { email, password };
-  console.log(object);
 
-  if (email && password === "") {
+  if (email === "") {
     console.log(alert("Всі поля повинні бути заповнені."));
   } else if (password === "") {
     console.log(alert("Всі поля повинні бути заповнені."));
+  } else if (event.target.elements) {
+    console.log(object);
   }
 }
